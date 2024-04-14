@@ -2,6 +2,16 @@
 
 Be Happy.
 
+## Showcase
+### Home
+![Home](./images/home.png)
+### Post
+![Post](./images/post1.png)
+
+![Post](./images/post2.png)
+
+![Post](./images/post3.png)
+
 ## Hugo environment
 ```
 hugo v0.124.1-db083b05f16c945fec04f745f0ca8640560cf1ec linux/amd64 BuildDate=2024-03-20T11:40:10Z VendorInfo=gohugoio
