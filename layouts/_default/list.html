@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ range .Pages }}
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+
+  <div class="post-card">
+    <a class="post-title" href="{{ .RelPermalink }}">
+          <h1>{{ .LinkTitle }}</h1>
+    </a>
+      <div class="datetime">
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time><br>
+      </div>
+    <div class="summary">
+      {{ .Summary }}<br>
+    </div>
+  </div>
+  {{ end }}
+{{ end }}

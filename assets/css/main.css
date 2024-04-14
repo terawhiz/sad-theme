@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  text-align: justify;
+  font-family: 'Iosevka Web';
+
+  color: #d5c4a1;
+  background-color: #0f1111;
+}
+
+header {
+  text-align: center;
+  padding: 3px;
+  padding: 20px;
+}
+
+.site-title, .misc {
+  margin: 0;
+  padding: 0;
+  color: #d3869b;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #d3869b;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  border: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  
+  padding-bottom: 20px;
+  border: 2px solid #665c54;
+  padding: 30px;
+  
+  background-color: #1d2021;
+}
+
+.container p {
+  line-height: 1.5;
+}
+
+.container pre, .container .highlight {
+  margin: 0 auto;
+}
+
+.container .post-header {
+  text-align: center;
+}
+
+.container .post-body {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: underline;
+  color: #9CC5A1;
+}
+
+header a {
+  text-decoration: none;
+  color: #DAD7CD;
+}
+
+.post-card h1 {
+  padding-top: 30px;
+  margin: 5px;
+  padding: 2px;
+}
+
+.post-card .summary, p {
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.7em;
+  padding-bottom: 0.3em;
+  color: #83a598;
+}
+
+img { 
+  border: 2px solid #d3869b;
+}
+
+pre {
+  background-color: #1d2021 !important;
+  border: 2px solid #d3869b;
+  padding: 30px;
+  max-width: 100vh;
+  overflow-x: auto;
+}
+
+p code {
+  color: #d3869b;
+  padding: 2px;
+  border: 1px solid #d3869b;
+}
+
+pre code {
+  display: block;
+  white-space: pre-wrap;
+  text-align: start;
+  font-family: 'Iosevka Web';
+}
+
+table, td {
+  border: 1px solid #d3869b;
+  padding: 7px;
+  text-align: center;
+}
+
+table, th {
+  padding: 7px;
+  border: 2px solid #d3869b;
+  border-collapse: collapse;
+}
+
+table {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 0px;
+  }
+
+  footer {
+    position: relative;
+    padding: 3px;
+  }
+}
