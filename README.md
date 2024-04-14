@@ -19,3 +19,8 @@ git clone https://github.com/terawhiz/sad-theme.git ./themes/sad-theme
 echo "theme = 'sad-theme'" > hugo.toml
 hugo server
 ```
+
+
+Todo:
+- [ ] Design tags
+- [ ] Setup seo and probably a nice embed
