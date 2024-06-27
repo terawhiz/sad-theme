@@ -1,22 +1,23 @@
 {{ define "main" }}
   {{ .Content }}
-    {{ range site.RegularPages }}
+  <div class="posts-list">
+      {{ range site.RegularPages }}
 
-    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-    {{ $dateHuman := .Date | time.Format ":date_long" }}
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format ":date_long" }}
 
-    <div class="post-card">
-      <div class="post-header">
-        <a class="post-title" href="{{ .RelPermalink }}">
-              <h1>{{ .LinkTitle }}</h1>
-        </a>
+      <div class="post-card">
+        <!-- <blockquote> -->
+          <a class="post-title" href="{{ .RelPermalink }}"><h1>{{ .LinkTitle }}</h1></a>
           <div class="datetime">
             <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time><br>
           </div>
+          <div class="summary">
+            {{ .Summary }}
+          </div>
+        <!-- </blockquote> -->
+        <hr>
       </div>
-      <div class="summary">
-        {{ .Summary }}<br>
-      </div>
+      {{ end }}
     </div>
-    {{ end }}
 {{ end }}

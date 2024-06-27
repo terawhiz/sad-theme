@@ -18,7 +18,7 @@ Renders a menu for the given menu ID.
 
 <span class="misc">[ </span>
 {{- range $index, $element := site.Menus.main -}}
-  <a {{ with $element.Params.class -}} class="{{ . }}" {{ end -}} href="{{ $element.URL }}">
+  <a {{ with $element.Params.class -}} class="{{ . }} menu" {{ end -}} href="{{ $element.URL }}">
     {{ $element.Name }}
   </a>
   {{ if ne (add $index 1) (len site.Menus.main) }}<span class="misc">|</span>{{ end }}
