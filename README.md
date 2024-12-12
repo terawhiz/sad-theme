@@ -1,6 +1,6 @@
 # Sad Theme
 
-Be Happy.
+Sad theme is very sad. I gave its work to another theme. Be Happy.
 
 ## Showcase
 ### Home
